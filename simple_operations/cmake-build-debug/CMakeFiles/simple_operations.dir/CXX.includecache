@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diogo/CLionProjects/CppEnhance/simple_operations/main.cpp
+iostream
+-
+string
+-
+stdio.h
+-
+simple_operations.h
+/home/diogo/CLionProjects/CppEnhance/simple_operations/simple_operations.h
+
+/home/diogo/CLionProjects/CppEnhance/simple_operations/simple_operations.h
+
