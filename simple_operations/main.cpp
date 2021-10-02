@@ -1,8 +1,13 @@
 #include <iostream>
 #include <string>
 #include "simple_operations.h"
+#include "credit_card_verifier/CreditCardInfo.h"
 
 int main() {
+
+    //Call to class method
+    specifyCreditCardInfo();
+
     std::cout << "Welcome, select a number please\n1 - Even number\n2 - String finder\n3 - Work with arrays" << std::endl;
     int choice, menu;
     std::string myStringChoice;
