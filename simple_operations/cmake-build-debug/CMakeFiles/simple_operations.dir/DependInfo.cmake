@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/diogo/CLionProjects/CppEnhance/simple_operations/credit_card_verifier/CreditCardInfo.cpp" "/home/diogo/CLionProjects/CppEnhance/simple_operations/cmake-build-debug/CMakeFiles/simple_operations.dir/credit_card_verifier/CreditCardInfo.cpp.o"
   "/home/diogo/CLionProjects/CppEnhance/simple_operations/main.cpp" "/home/diogo/CLionProjects/CppEnhance/simple_operations/cmake-build-debug/CMakeFiles/simple_operations.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

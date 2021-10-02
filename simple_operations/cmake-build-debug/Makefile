@@ -129,6 +129,30 @@ simple_operations/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_operations.dir/build.make CMakeFiles/simple_operations.dir/build
 .PHONY : simple_operations/fast
 
+credit_card_verifier/CreditCardInfo.o: credit_card_verifier/CreditCardInfo.cpp.o
+.PHONY : credit_card_verifier/CreditCardInfo.o
+
+# target to build an object file
+credit_card_verifier/CreditCardInfo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_operations.dir/build.make CMakeFiles/simple_operations.dir/credit_card_verifier/CreditCardInfo.cpp.o
+.PHONY : credit_card_verifier/CreditCardInfo.cpp.o
+
+credit_card_verifier/CreditCardInfo.i: credit_card_verifier/CreditCardInfo.cpp.i
+.PHONY : credit_card_verifier/CreditCardInfo.i
+
+# target to preprocess a source file
+credit_card_verifier/CreditCardInfo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_operations.dir/build.make CMakeFiles/simple_operations.dir/credit_card_verifier/CreditCardInfo.cpp.i
+.PHONY : credit_card_verifier/CreditCardInfo.cpp.i
+
+credit_card_verifier/CreditCardInfo.s: credit_card_verifier/CreditCardInfo.cpp.s
+.PHONY : credit_card_verifier/CreditCardInfo.s
+
+# target to generate assembly for a file
+credit_card_verifier/CreditCardInfo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_operations.dir/build.make CMakeFiles/simple_operations.dir/credit_card_verifier/CreditCardInfo.cpp.s
+.PHONY : credit_card_verifier/CreditCardInfo.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... simple_operations"
+	@echo "... credit_card_verifier/CreditCardInfo.o"
+	@echo "... credit_card_verifier/CreditCardInfo.i"
+	@echo "... credit_card_verifier/CreditCardInfo.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

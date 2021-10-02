@@ -1,12 +1,6 @@
-//
-// Created by diogo on 02/10/2021.
-//
-
-#ifndef UNTITLED_SIMPLE_OPERATIONS_H
-#define UNTITLED_SIMPLE_OPERATIONS_H
-
-#endif //UNTITLED_SIMPLE_OPERATIONS_H
-
+#ifndef SIMPLE_OPERATIONS_H
+#define SIMPLE_OPERATIONS_H
+#endif
 
 int choose_num(int num);
 void findIndexOnString(std::string myString);
