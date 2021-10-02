@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include <map>
 #include "CreditCardInfo.h"
 
 void specifyCreditCardInfo()
@@ -34,4 +35,25 @@ bool CreditCard::creditCardIsValid(int creditCardNumber) {
         return true;
 
     return false;
+}
+
+std::string CreditCard::typeOfCard(int creditCardNumber) {
+
+    //Defines a dictionary with the available types of IIN numbers for credit cards
+    std::map<char, int> availableTypes = {
+            {'American Express', 3},
+            {'Visa', 4},
+            {'MasterCard', 5},
+            {'Diners Club', 6}
+    };
+
+    //STILL NEED FIX
+
+    //Loop through map to find a match between the first number
+    // in the credit card and the values of the keys in the map
+    for (auto it=availableTypes.begin(); it!=availableTypes.end(); ++it)
+    {
+        if(availableTypes.value_comp(it) == creditCardNumber)
+            std::cout << availableTypes.find(creditCardNumber);
+    }
 }
