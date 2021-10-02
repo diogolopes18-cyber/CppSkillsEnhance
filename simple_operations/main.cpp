@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <stdio.h>
 #include "simple_operations.h"
 
 int main() {
@@ -35,4 +34,3 @@ int main() {
 
     return 0;
 }
-
