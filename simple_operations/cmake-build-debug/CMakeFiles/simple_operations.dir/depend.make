@@ -5,5 +5,6 @@ CMakeFiles/simple_operations.dir/credit_card_verifier/CreditCardInfo.cpp.o: \
  ../credit_card_verifier/CreditCardInfo.cpp \
  ../credit_card_verifier/CreditCardInfo.h
 CMakeFiles/simple_operations.dir/main.cpp.o: \
+ ../credit_card_verifier/CreditCardInfo.h \
  ../main.cpp \
  ../simple_operations.h
