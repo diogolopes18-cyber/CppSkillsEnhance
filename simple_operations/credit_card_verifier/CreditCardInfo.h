@@ -7,9 +7,18 @@
 class CreditCard
 {
 public:
-    double creditCardNumber;
+    int creditCardNumber;
     int cvcNumber;
     std::string bankNam;
+
+    //Create a constructor
+    CreditCard(int cardNumber, int cvcNum, std::string name){
+        creditCardNumber = cardNumber;
+        cvcNumber = cvcNum;
+        bankNam = name;
+    }
+
+    bool creditCardIsValid(int creditCardNumber);
 };
 
 void specifyCreditCardInfo();
