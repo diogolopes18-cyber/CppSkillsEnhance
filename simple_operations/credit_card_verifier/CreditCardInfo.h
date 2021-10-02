@@ -19,6 +19,7 @@ public:
     }
 
     bool creditCardIsValid(int creditCardNumber);
+    std::string typeOfCard(int creditCardNumber);
 };
 
 void specifyCreditCardInfo();
