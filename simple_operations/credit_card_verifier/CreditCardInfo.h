@@ -7,19 +7,19 @@
 class CreditCard
 {
 public:
-    int creditCardNumber;
+    long int creditCardNumber;
     int cvcNumber;
     std::string bankNam;
 
     //Create a constructor
-    CreditCard(int cardNumber, int cvcNum, std::string name){
+    CreditCard(long int cardNumber, int cvcNum, std::string name){
         creditCardNumber = cardNumber;
         cvcNumber = cvcNum;
         bankNam = name;
     }
 
-    bool creditCardIsValid(int creditCardNumber);
-    void typeOfCard(int creditCardNumber);
+    bool creditCardIsValid(long int creditCardNumber);
+    void typeOfCard(long int creditCardNumber);
 };
 
 void specifyCreditCardInfo();
