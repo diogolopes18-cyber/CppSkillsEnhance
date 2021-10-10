@@ -90,6 +90,12 @@
 		<Unit filename="/home/diogo/CLionProjects/CppEnhance/simple_operations/credit_card_verifier/CreditCardInfo.h">
 			<Option target="simple_operations"/>
 		</Unit>
+		<Unit filename="/home/diogo/CLionProjects/CppEnhance/simple_operations/dynamic_arrays/dynamicArrays.cpp">
+			<Option target="simple_operations"/>
+		</Unit>
+		<Unit filename="/home/diogo/CLionProjects/CppEnhance/simple_operations/dynamic_arrays/dynamicArrays.h">
+			<Option target="simple_operations"/>
+		</Unit>
 		<Unit filename="/home/diogo/CLionProjects/CppEnhance/simple_operations/main.cpp">
 			<Option target="simple_operations"/>
 		</Unit>

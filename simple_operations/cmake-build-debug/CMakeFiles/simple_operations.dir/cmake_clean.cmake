@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/simple_operations.dir/credit_card_verifier/CreditCardInfo.cpp.o"
+  "CMakeFiles/simple_operations.dir/dynamic_arrays/dynamicArrays.cpp.o"
   "CMakeFiles/simple_operations.dir/main.cpp.o"
   "simple_operations"
   "simple_operations.pdb"

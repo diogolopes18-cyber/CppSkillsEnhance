@@ -153,6 +153,30 @@ credit_card_verifier/CreditCardInfo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_operations.dir/build.make CMakeFiles/simple_operations.dir/credit_card_verifier/CreditCardInfo.cpp.s
 .PHONY : credit_card_verifier/CreditCardInfo.cpp.s
 
+dynamic_arrays/dynamicArrays.o: dynamic_arrays/dynamicArrays.cpp.o
+.PHONY : dynamic_arrays/dynamicArrays.o
+
+# target to build an object file
+dynamic_arrays/dynamicArrays.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_operations.dir/build.make CMakeFiles/simple_operations.dir/dynamic_arrays/dynamicArrays.cpp.o
+.PHONY : dynamic_arrays/dynamicArrays.cpp.o
+
+dynamic_arrays/dynamicArrays.i: dynamic_arrays/dynamicArrays.cpp.i
+.PHONY : dynamic_arrays/dynamicArrays.i
+
+# target to preprocess a source file
+dynamic_arrays/dynamicArrays.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_operations.dir/build.make CMakeFiles/simple_operations.dir/dynamic_arrays/dynamicArrays.cpp.i
+.PHONY : dynamic_arrays/dynamicArrays.cpp.i
+
+dynamic_arrays/dynamicArrays.s: dynamic_arrays/dynamicArrays.cpp.s
+.PHONY : dynamic_arrays/dynamicArrays.s
+
+# target to generate assembly for a file
+dynamic_arrays/dynamicArrays.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simple_operations.dir/build.make CMakeFiles/simple_operations.dir/dynamic_arrays/dynamicArrays.cpp.s
+.PHONY : dynamic_arrays/dynamicArrays.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... credit_card_verifier/CreditCardInfo.o"
 	@echo "... credit_card_verifier/CreditCardInfo.i"
 	@echo "... credit_card_verifier/CreditCardInfo.s"
+	@echo "... dynamic_arrays/dynamicArrays.o"
+	@echo "... dynamic_arrays/dynamicArrays.i"
+	@echo "... dynamic_arrays/dynamicArrays.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
