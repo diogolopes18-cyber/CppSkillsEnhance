@@ -45,7 +45,7 @@ bool CreditCard::creditCardIsValid(long int creditCardNumber) {
         return true;
 }
 
-void CreditCard::typeOfCard(int creditCardNumber) {
+void CreditCard::typeOfCard(long int creditCardNumber) {
 
     //Defines a dictionary with the available types of IIN numbers for credit cards
     /*std::map<char, int> availableTypes = {
@@ -56,17 +56,24 @@ void CreditCard::typeOfCard(int creditCardNumber) {
     };*/
 
     int availableTypes[] = {3, 4, 5, 6};
-    int firstDigit = (creditCardNumber % 10) / 10;
+    long int digits[15];
 
+    for(int i = 0; i < 15; i++)
+    {
+        digits[i] = creditCardNumber % 10;
+        creditCardNumber /= 10;
+    }
+
+    std::cout << digits[0];
     //STILL NEED FIX
 
     //Loop through map to find a match between the first number
     // in the credit card and the values of the keys in the map
     for(int cardNum = 0; cardNum < 3; cardNum++)
     {
-        if( firstDigit == availableTypes[cardNum])
+        if( digits[0] == availableTypes[cardNum])
         {
-            switch (firstDigit) {
+            switch (digits[0]) {
                 case 3:
                     std::cout << "American Express Card" << std::endl;
                     break;
