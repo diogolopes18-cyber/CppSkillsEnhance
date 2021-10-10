@@ -7,11 +7,16 @@
 void specifyCreditCardInfo()
 {
     char cardDetermine;
+    long int creditNumber;
+
+    //Insert card number
+    std::cout << "Please insert your card number" << std::endl;
+    std::cin >> creditNumber;
 
     //Create new object for class CreditCardInfo
-    CreditCard card(20221232, 222, "CGD");
-    if(card.creditCardIsValid(card.creditCardNumber) == true) {
-        std::cout << "Valid card!" << std::endl;
+    CreditCard card(creditNumber, 222, "CGD");
+    if(card.creditCardIsValid(card.creditCardNumber)) {
+        std::cout << "Valid card!\n";
 
         //Choose to proceed with card determination
         std::cout << "Proceed with card determination?\n";
