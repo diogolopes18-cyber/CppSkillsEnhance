@@ -1,6 +1,7 @@
 #include <string>
 #include <iostream>
 #include <map>
+#include <bits/stdc++.h>
 #include "CreditCardInfo.h"
 
 void specifyCreditCardInfo()
@@ -26,21 +27,17 @@ void specifyCreditCardInfo()
         std::cout << "Invalid card! Please insert a new card\n";
 }
 
-bool CreditCard::creditCardIsValid(int creditCardNumber) {
+bool CreditCard::creditCardIsValid(long int creditCardNumber) {
 
-    int cnt = 0;
-    while(creditCardNumber != 0)
+    std::string nums = std::to_string(creditCardNumber);
+    int numDigits = nums.length();
+
+    if (numDigits != 16)
     {
-        creditCardNumber /= 10;
-        cnt++;
+        return false;
     }
-
-    if (cnt != 16)
-        perror("Should contain 16 digits!");
     else
         return true;
-
-    return false;
 }
 
 void CreditCard::typeOfCard(int creditCardNumber) {
