@@ -6,25 +6,21 @@
 
 #IncludeRegexTransform: 
 
+/home/diogo/CLionProjects/CppEnhance/simple_operations/credit_card_verifier/CreditCardInfo.cpp
+string
+-
+iostream
+-
+algorithm
+-
+bits/stdc++.h
+-
+CreditCardInfo.h
+/home/diogo/CLionProjects/CppEnhance/simple_operations/credit_card_verifier/CreditCardInfo.h
+
 /home/diogo/CLionProjects/CppEnhance/simple_operations/credit_card_verifier/CreditCardInfo.h
 string
 -
 iostream
 -
-
-/home/diogo/CLionProjects/CppEnhance/simple_operations/dynamic_arrays/dynamicArrays.h
-
-/home/diogo/CLionProjects/CppEnhance/simple_operations/main.cpp
-iostream
--
-string
--
-simple_operations.h
-/home/diogo/CLionProjects/CppEnhance/simple_operations/simple_operations.h
-credit_card_verifier/CreditCardInfo.h
-/home/diogo/CLionProjects/CppEnhance/simple_operations/credit_card_verifier/CreditCardInfo.h
-dynamic_arrays/dynamicArrays.h
-/home/diogo/CLionProjects/CppEnhance/simple_operations/dynamic_arrays/dynamicArrays.h
-
-/home/diogo/CLionProjects/CppEnhance/simple_operations/simple_operations.h
 
