@@ -60,8 +60,6 @@ void CreditCard::typeOfCard(long int creditCardNumber) {
     bool firstDigitExists = std::find(std::begin(availableTypes),
                                       std::end(availableTypes), first_digit) != std::end(availableTypes);
 
-    int availableTypes[] = {3, 4, 5, 6};
-    long int digits[15];
 
     if(firstDigitExists == true)
     {
