@@ -1,6 +1,6 @@
 #include <string>
 #include <iostream>
-#include <map>
+#include <algorithm>
 #include <bits/stdc++.h>
 #include "CreditCardInfo.h"
 
@@ -55,52 +55,40 @@ int firstDigitCard(long int creditCardNumber) {
 
 void CreditCard::typeOfCard(long int creditCardNumber) {
 
-    //Defines a dictionary with the available types of IIN numbers for credit cards
-    /*std::map<char, int> availableTypes = {
-            {'A', 3},
-            {'V', 4},
-            {'M', 5},
-            {'D', 6}
-    };*/
+    int availableTypes[4] = {3, 4, 5, 6};
+    int first_digit = firstDigitCard(creditCardNumber);
+    bool firstDigitExists = std::find(std::begin(availableTypes),
+                                      std::end(availableTypes), first_digit) != std::end(availableTypes);
 
     int availableTypes[] = {3, 4, 5, 6};
     long int digits[15];
 
-    for(int i = 0; i < 15; i++)
+    if(firstDigitExists == true)
     {
-        digits[i] = creditCardNumber % 10;
-        creditCardNumber /= 10;
-    }
+        switch (first_digit) {
+            default:
+                std::cout << "No matching card";
+                break;
 
-    std::cout << digits[0];
-    //STILL NEED FIX
+            case 3:
+                std::cout << "American Express Card" << std::endl;
+                break;
 
-    //Loop through map to find a match between the first number
-    // in the credit card and the values of the keys in the map
-    for(int cardNum = 0; cardNum < 3; cardNum++)
-    {
-        if( digits[0] == availableTypes[cardNum])
-        {
-            switch (digits[0]) {
-                case 3:
-                    std::cout << "American Express Card" << std::endl;
-                    break;
+            case 4:
+                std::cout << "Visa Card" << std::endl;
+                break;
 
-                case 4:
-                    std::cout << "Visa Card" << std::endl;
-                    break;
+            case 5:
+                std::cout << "MasterCard" << std::endl;
+                break;
 
-                case 5:
-                    std::cout << "MasterCard" << std::endl;
-                    break;
-
-                case 6:
-                    std::cout << "Diners Club Card" << std::endl;
-                    break;
-            }
+            case 6:
+                std::cout << "Diners Club Card" << std::endl;
+                break;
         }
-
-        else
-            exit(-1);
     }
+
+    else
+        exit(-1);
+
 }
