@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <iostream>
 
 //Simple program to illustrate the usage of dynamic arrays
