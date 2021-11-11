@@ -45,6 +45,14 @@ bool CreditCard::creditCardIsValid(long int creditCardNumber) {
         return true;
 }
 
+int firstDigitCard(long int creditCardNumber) {
+
+    int digits = (int)log10(creditCardNumber);
+    creditCardNumber = (int)(creditCardNumber / pow(10, digits));
+
+    return creditCardNumber;
+}
+
 void CreditCard::typeOfCard(long int creditCardNumber) {
 
     //Defines a dictionary with the available types of IIN numbers for credit cards
